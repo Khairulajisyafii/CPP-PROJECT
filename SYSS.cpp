@@ -17,14 +17,24 @@ void sleep_for_seconds(float seconds) {
 
 int main() {
     int min;
+string input;
+while(true){
+cout << "M/D" << endl;
+cin >>input;
+if(input == "M"){
     cout << "Masukkan jumlah menit : ";
-    cin >> min;
-
+    cin >> min;
     int sec = 60 * min;
     for(int i = 0;i < sec;i++){
         cout << i << "/" << sec << "  ";
     sleep_for_seconds(1.0f);
     }
+}else if(input == "D"){
+cout << "masukkan jumlah detik" << endl;
+cin >> min;
+for(int i = 0;i < min;i++){
+cout << i << "/" << min << "  ";
+}
     cout << "Mematikan komputer...\n";
     #ifdef _WIN32
     system("shutdown /s /t 1");
