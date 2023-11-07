@@ -34,6 +34,7 @@ cout << "masukkan jumlah detik" << endl;
 cin >> min;
 for(int i = 0;i < min;i++){
 cout << i << "/" << min << "  ";
+sleep_for_seconds(1.0f);
 }
     cout << "Mematikan komputer...\n";
     #ifdef _WIN32
