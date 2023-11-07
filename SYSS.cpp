@@ -29,13 +29,15 @@ if(input == "M" || input == "m"){
     for(int i = 0;i < sec;i++){
         cout << i << "/" << sec << "  ";
     sleep_for_seconds(1.0f);
-    }else if(input == "D" || input == "d"){
+    }}else if(input == "D" || input == "d"){
 cout << "masukkan jumlah detik" << endl;
 cin >> min;
 for(int i = 0;i < min;i++){
 cout << i << "/" << min << "  ";
 sleep_for_seconds(1.0f);
     
+}
+    }
 }
     cout << "Mematikan komputer...\n";
     #ifdef _WIN32
